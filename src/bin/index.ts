@@ -6,7 +6,7 @@ class Program extends Application {
     }
 
     main(){
-        this.build("dev");
+        this.version("dev");
     }
 }
 
