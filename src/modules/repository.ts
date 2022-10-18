@@ -9,9 +9,9 @@ export class Repository implements IRepository {
         db = new Database();
     }
 
-    async getall(): Promise<any[]> {
+    async getall(sql: string): Promise<any[]> {
         try{
-            return await db.getall('', undefined);
+            return await db.getall(sql, undefined);
         }
         catch(err){
             throw err;

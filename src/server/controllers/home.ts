@@ -2,13 +2,12 @@ import {Request, Response} from 'express';
 import { format } from 'date-fns';
 import {v4} from 'uuid'
 import os from 'os'
-import { Log } from '../../modules/logEvents';
+import { Log } from '../../modules/log';
 
 export class ControllerHome {
 
     index(req: Request, res: Response)
     { 
-
         let o = {
             user: os.userInfo().username,
             hostname: os.hostname()

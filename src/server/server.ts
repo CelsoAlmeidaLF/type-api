@@ -13,12 +13,12 @@ export class ServerApi {
         this.home = new ControllerHome();
     }
 
-    middleware(){
+    private middleware(){
         app.use(parser.urlencoded({extended: true}));
         app.use(parser.json());
     }
 
-    routers(){
+    private routers(){
         app.get('/api/v1', this.home.index);
     }
 

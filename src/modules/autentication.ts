@@ -1,4 +1,3 @@
-import { result } from "lodash";
 import { Database } from "../data/database";
 import { ModelUser } from "../models/modelUser";
 
