@@ -1,6 +1,7 @@
 import express from 'express';
 import parser from 'body-parser';
 import { ControllerHome } from './controllers/home';
+import router from './routers/router';
 
 const app = express();
 const port : number = 3000;
@@ -19,7 +20,8 @@ export class ServerApi {
     }
 
     private routers(){
-        app.get('/api/v1', this.home.index);
+        //app.get('/api/v1', this.home.index);
+        app.use('/api/v1/', router)
     }
 
     createServer(){
