@@ -1,4 +1,3 @@
-import { result } from "lodash";
 import { Database } from "../data/database";
 import { ModelUser } from "../models/modelUser";
 
@@ -27,9 +26,6 @@ export class Autentication {
 
     set(user: string, token: string, date: string): string { 
         try{
-            //this.db.exec('DROP TABLE tbe_user')
-            //this.db.exec('CREATE TABLE tb_user (user, token, dtCriacao)'); 
-            //let result: string = this.db.run('DELETE FROM tb_user WHERE user = ?', [user]);
             this.db.sucess = 'cadastro do usuario com sucesso!'
             let result: string = this.db.run(`INSERT INTO tb_user (user, token, dtCriacao) VALUES (?,?,?)`, [user, token, date]);
             return result;
