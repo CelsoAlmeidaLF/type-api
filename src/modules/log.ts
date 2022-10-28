@@ -2,7 +2,7 @@ import fs from 'fs'
 import { promises } from 'fs'
 import path from 'path'
 
-export class Log {
+export default class Log {
 
    static saveAs(msg: string) {
         console.log(msg)     

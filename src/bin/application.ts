@@ -1,19 +1,11 @@
-import { Framework } from "./framework";
-import { System } from "./system";
+import Framework from "./framework";
 
-export class Application {
-
-    framework: Framework
-    system: System
+export default class Application extends Framework {
 
     constructor(){
+        super()
         console.clear()
-        this.system = new System();
-        this.framework = new Framework();
     }
 
-    version(version: string){
-        this.system.version(version);
-    }
     
 }

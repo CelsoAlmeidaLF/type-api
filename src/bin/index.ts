@@ -1,4 +1,4 @@
-import { Application } from "./application";
+import Application from "./application";
 
 class Program extends Application {
     constructor(){
@@ -6,7 +6,6 @@ class Program extends Application {
     }
 
     main(){
-        this.version("dev");
     }
 }
 

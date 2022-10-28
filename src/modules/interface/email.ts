@@ -1,7 +1,7 @@
 
-import {ModelEmail} from '../../models/ModelEmail'
+import ModelEmail from '../../models/ModelEmail'
 
-export interface IEmailTo {
+export default interface IEmailTo {
     to: string,
     name: string
 }

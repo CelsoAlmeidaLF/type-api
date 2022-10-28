@@ -1,22 +1,9 @@
-import { Application } from "../app/application"
+import Application  from "../app/application"
 
-export class Version {
-
-    private config: any | undefined
+export default class Version {
 
     constructor(){
-        this.config = undefined
-    }
 
-    prodution() {
-        this.config = 'prodution'
     }
-
-    development() {
-        this.config = 'development'
-    }
-
-    program(){
-        let app = new Application(this.config);
-    }
+    
 }

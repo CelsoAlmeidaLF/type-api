@@ -2,7 +2,7 @@ import fs from 'fs'
 import { promises } from 'fs'
 import path from 'path'
 
-export class LogEvents {
+export default class LogEvents {
 
     result: string;
 

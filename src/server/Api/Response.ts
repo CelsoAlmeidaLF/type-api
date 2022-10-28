@@ -2,7 +2,7 @@ import {Response} from 'express';
 import { format } from 'date-fns';
 import {v4} from 'uuid'
 
-export class ResponseApi {
+export default class ResponseApi {
 
     Ok(res: Response){
 
