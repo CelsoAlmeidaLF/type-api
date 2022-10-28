@@ -8,12 +8,11 @@ export class Telegram {
         private chatId: string
 
         constructor(){
-            this.token = '1522041529:AAEikMPHmALvzOoS77Gjeuw2LlC_6sqignE';
-            this.chatId = '1593917895'
+            this.token = '...';
+            this.chatId = '...';
         }
 
        chamar(msg: string){
-
             try{        
                 let date = `${format(new Date(), 'yyyy-MM-dd HH:mm:ss')}`; 
                 let bot = new TelegramBot(this.token);
@@ -22,7 +21,5 @@ export class Telegram {
             }catch(ex){
                 throw ex;
             }
-
        }
 
-}
