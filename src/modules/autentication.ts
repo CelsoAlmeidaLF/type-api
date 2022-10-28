@@ -1,12 +1,14 @@
-import Database from "./database";
+import Database from "./library/database";
 import ModelUser from "../models/modelUser";
+import Framework from "../bin/framework";
 
-export default class Autentication {
+export default class Autentication extends Framework {
 
     private db: Database
     private user: ModelUser
 
     constructor(){
+        super()
         this.user = new ModelUser();
         this.db = new Database();
     }
