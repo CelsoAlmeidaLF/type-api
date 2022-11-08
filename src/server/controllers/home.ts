@@ -1,10 +1,10 @@
 import {Request, Response} from 'express';
-import ResponseApi from '../Api/Response';
+import result from '../api/Response';
 
-export default class ControllerHome extends ResponseApi {
+export default class controllerHome {
 
-    index(req: Request, res: Response)
+   static index(req: Request, res: Response)
     { 
-        this.Ok(res);
+        result.Ok(res);
     }
 }
