@@ -1,9 +1,9 @@
 {
     "compilerOptions": {
+        "forceConsistentCasingInFileNames": true,
         "target": "ES6",
         "module": "commonjs",
         "watch": true,
-        "forceConsistentCasingInFileNames": true,
         "lib": ["DOM", "ES2017"],
         "outDir": "./dist",
         "rootDir": "./src",
